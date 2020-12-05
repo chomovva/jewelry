@@ -1,0 +1,47 @@
+
+// подвал сайта
+
+.footer {
+
+	&::before {
+		@extend %default-border-block;
+		content: '';
+		position: absolute;
+		top: 0;
+		width: 100%;
+	}
+
+	.custom-logo-link {
+		margin-right: 1.5rem;
+	}
+
+	.socials {
+		list-style-type: none;
+		padding-left: 0;
+		margin: 0 1.5rem;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+	}
+
+	.socials li {
+		margin: 0 .5rem;
+		text-transform: uppercase;
+		font-size: .8rem;
+	}
+
+	a {
+		color: $text-color;
+	}
+
+	.subscribe {
+		margin-left: auto;
+	}
+
+	.subscribe::before {
+		@extend %background-contain;
+		@extend %icon-email;
+		content: '';
+	}
+
+}

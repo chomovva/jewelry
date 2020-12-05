@@ -1,0 +1,10 @@
+
+// содержимое страницы
+
+.content {
+
+	hr {
+		@extend %default-border-block;
+	}
+
+}

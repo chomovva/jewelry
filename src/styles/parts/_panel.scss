@@ -1,0 +1,18 @@
+
+// верхняя панель
+
+.panel {
+
+	@extend %container;
+	position: relative;
+	padding-top: 2.6rem;
+	padding-bottom: 2.6rem;
+
+	&::after {
+		@extend %default-border-block;
+		content: '';
+		position: absolute;
+		bottom: 0;
+	}
+
+}

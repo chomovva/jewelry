@@ -1,0 +1,20 @@
+// переменнеые и классы для наследования
+@import "helpers/variables";
+@import "helpers/functions";
+@import "helpers/mixins";
+@import "helpers/extends";
+
+
+// базовые стили и классы
+@import "base/normalize";
+@import "base/type";         // вспомогательные классы
+@import "base/wrapper";      // обёртка страниц
+
+
+// блоки страницы
+@import "parts/panel";       // верхняя панель
+@import "parts/forms";       // постраничная навигация
+@import "parts/header";      // шапка сайта
+@import "parts/nav";         // меню сайта
+@import "parts/content";     // сдержимое страницы
+@import "parts/footer";      // повал сайта

@@ -1,0 +1,24 @@
+
+// навигационное меню
+
+ul.nav__list.list#nav-list
+	li.menu-item: a( href="#" ) Home
+	li.menu-item: a( href="#" ) About
+	li.menu-item: a( href="#" ) Gallery
+	li.menu-item: a( href="#" ) News
+	li.menu-item: a( href="#" ) Contacts
+	li.menu-item.has-sub-menu
+		a( href="#" ) Blocks
+		ul.sub-menu
+			li.menu-item: a( href="#" ) Typography
+			li.menu-item
+				a( href="#" ) Simple
+				ul.sub-menu
+					li.menu-item: a( href="#" ) Typography
+					li.menu-item: a( href="#" ) Simple
+					li.menu-item: a( href="#" ) Advanced
+					li.menu-item: a( href="#" ) Simple
+					li.menu-item: a( href="#" ) Advanced
+			li.menu-item: a( href="#" ) Advanced
+
+button.nav__burger.burger#nav-burger #[span.sr-only Меню]

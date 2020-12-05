@@ -1,0 +1,35 @@
+//
+//    WRAPPER
+//    контейнер страницы, прижатие футера
+
+
+.wrapper {
+
+	margin: 0 auto;
+	min-width: 300px;
+	min-height: 100vh;
+	position: relative;
+	overflow: hidden;
+
+	.item--main {
+		//	
+	}
+
+	.item--header {
+		position: absolute;
+		top: 50%;
+		transform: translate( 0%, -50% );
+	}
+
+	.item--footer {
+		@extend %container;
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-start;
+		align-items: center;
+		position: relative;
+		padding-top: 2.6rem;
+		padding-bottom: 2.6rem;
+	}
+
+}
