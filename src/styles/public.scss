@@ -17,4 +17,9 @@
 @import "parts/header";      // шапка сайта
 @import "parts/nav";         // меню сайта
 @import "parts/content";     // сдержимое страницы
+@import "parts/pagination";  // навигация по страницам
 @import "parts/footer";      // повал сайта
+@import "parts/subscribe";   // форма подписки
+@import "parts/separator";   // декоративный разделитель
+
+@import "pages/archive";     // страница архива

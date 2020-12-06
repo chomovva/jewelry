@@ -6,5 +6,19 @@ block variables
 	- page.title = 'Блог';
 
 
+mixin blog_entry( args )
+	article.entry
+		.separator
+		a.wp-post-thumbnail-link( href="#" )
+			img.wp-post-thumbnail( src=args.thumbnail alt=args.title )
+		.overlay
+			time.datetime( datetime="2004-07-24T18:18:18+04:00" ) 24 August, by Motopress
+			h2.title: a( href="#" ) #{args.title}
+			p Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque veritatem laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatiset quasi architecto beatae voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore  quasi architecto beata
+			a.permalink( href="#" ) Read post
+
+
 block main
-	div
+	+blog_entry( { thumbnail: src.userfiles+'post-thumbnail-01.jpg', title: 'Our Design Process' } )
+	+blog_entry( { thumbnail: src.userfiles+'post-thumbnail-01.jpg', title: 'Mother\'s Day interview II with Marie Soh' } )
+	include parts/_pagination

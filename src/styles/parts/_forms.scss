@@ -5,7 +5,61 @@ form,
 .form {
 
 
-	
+	label {
+		display: block;
+		font-weight: bold;
+		margin-top: .5em;
+		color: $brand-primary;
+		cursor: pointer;
+	}
 
+	select,
+	textarea,
+	input[ type="text" ],
+	input[ type="email" ],
+	input[ type="search" ],
+	input[ type="password" ] {
+		font-weight: 400;
+		padding: .15rem 0;
+		background-color: transparent;
+		display: block;
+		border-top: 0;
+		border-left: 0;
+		border-right: 0;
+		border-bottom: .1rem solid #d8d8d8;
+		width: 100%;
+		box-sizing: border-box;
+		outline: none;
+		color: $text-color;
+		font-family: $font-family-base;
+		font-style: italic;
+		font-size: 80%;
+	}
+
+
+	textarea:read-only,
+	input[ type="text" ]:read-only,
+	input[ type="email" ]:read-only,
+	input[ type="search" ]:read-only,
+	input[ type="password" ]:read-only {
+		border-bottom: 1px solid darken( $body-color, 3% );
+		background-color: darken( $body-color, 3% );
+	}
+
+
+	textarea {
+		resize: vertical;
+	}
+
+
+	[ type="submit" ] {
+		font-family: $font-family-title;
+		font-weight: bold;
+		color: $title-color;
+		background-color: transparent;
+		border: none;
+		padding: .15rem 0;
+		cursor: pointer;
+	}
 
 }

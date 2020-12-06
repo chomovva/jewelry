@@ -1,0 +1,47 @@
+
+// навигация по страницам
+.pagination {
+
+	max-width: $container-inner-width;
+	margin: 2rem auto;
+
+	.page-numbers {
+		width: 2.5rem;
+		height: 2.5rem;
+		display: inline-block;
+		font-size: 1rem;
+		line-height: 2.5rem;
+		vertical-align: middle;
+		text-align: center;
+		font-family: $font-family-title;
+	}
+
+	.current {
+		background-color: #f5f4f2;
+	}
+
+	.next,
+	.prev {
+		font-size: 0;
+	}
+
+	.next::before,
+	.prev::before {
+		@extend %bgi-contain;
+		@extend %icon-arrow-down;
+		@include size( 1rem, 1rem );
+		content: '';
+		transform-origin: center center;
+		display: inline-block;
+		vertical-align: middle;
+	}
+
+	.next::before {
+		transform: rotate( -90deg );
+	}
+
+	.prev::before {
+		transform: rotate( 90deg );
+	}
+
+}

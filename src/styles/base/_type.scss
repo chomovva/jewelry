@@ -44,7 +44,7 @@
 
 .list-inline { @extend %list-inline; }
 
-.sr-only { display: none; }
+.sr-only, .screen-reader-text { display: none; }
 
 .container-fluid {
 	@extend %container-fluid;

@@ -1,0 +1,45 @@
+
+// страница архива, блога
+
+.archive {
+
+	.entry {
+		max-width: $container-inner-width;
+		margin-left: auto;
+		margin-right: auto;
+		position: relative;
+	}
+
+	.entry::after {
+		@extend %default-border-block;
+		content: '';
+		margin-top: 3rem;
+	}
+
+	.entry:last-of-type::after {
+		display: none;
+	}
+
+	.overlay {
+		background-color: #f8f8f7;
+		padding: 1rem 3rem 3rem 3rem;
+	}
+
+	.wp-post-thumbnail-link {
+		display: block;
+	}
+
+	.wp-post-thumbnail {
+		display: block;
+		width: 100%;
+	}
+
+	.title a {
+		text-decoration: underline;
+	}
+
+	.permalink {
+		@extend %button;
+	}
+
+}

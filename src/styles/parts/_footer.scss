@@ -39,7 +39,7 @@
 	}
 
 	.subscribe::before {
-		@extend %background-contain;
+		@extend %bgi-contain;
 		@extend %icon-email;
 		content: '';
 	}
